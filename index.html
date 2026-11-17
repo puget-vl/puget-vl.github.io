@@ -10,8 +10,15 @@
     <style>
         body {
             background-color: #0A0A14;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='16' height='16' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='0.5'/%3E%3C/svg%3E");
+            background-image: url("./puget-sound.svg");
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: clamp(44rem, 100%, 64rem) auto;
             color: white;
+        }
+
+        #puget-map #shore stop {
+          stop-color: #ffffff;
         }
 
         a {
@@ -186,6 +193,7 @@
       year          = {2026},
 }</code></pre>
         </div>
+        <p class="footnote">Shoreline data from the <a href="https://gis.ecology.wa.gov/serverext/rest/services/Authoritative/SEA/MapServer/9">Washington State Department of Ecology</a>.</p>
     </div>
 </body>
 </html>
