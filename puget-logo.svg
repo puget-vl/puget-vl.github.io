@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="128" viewBox="0 0 400 128">
+  <title>Puget</title>
+  <text x="200" y="80" text-anchor="middle" fill="#000"
+        font-family="Arial, sans-serif" font-size="90" font-weight="700" letter-spacing="-4">puget</text>
+  <path d="M84 106
+           c4.83 0 9.67 3.33 14.5 7 s9.67 7 14.5 7 9.67 -3.33 14.5 -7 9.67 -7 14.5 -7
+           c4.83 0 9.67 3.33 14.5 7 s9.67 7 14.5 7 9.67 -3.33 14.5 -7 9.67 -7 14.5 -7
+           c4.83 0 9.67 3.33 14.5 7 s9.67 7 14.5 7 9.67 -3.33 14.5 -7 9.67 -7 14.5 -7
+           c4.83 0 9.67 3.33 14.5 7 s9.67 7 14.5 7 9.67 -3.33 14.5 -7 9.67 -7 14.5 -7"
+        fill="none" stroke="#00839A" stroke-width="6" stroke-linecap="round"/>
+</svg>
