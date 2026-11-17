@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetris</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link href="./bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0A0A14;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='16' height='16' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='0.5'/%3E%3C/svg%3E");
+            color: white;
+        }
+
+        a {
+            color: #7aacf7;
+        }
+
+        a:hover {
+            color: #a8c8ff;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 820px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+        }
+
+        .logo {
+            width: 75%;
+            height: auto;
+        }
+
+        pre.citation {
+            overflow-x: scroll;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        pre.citation::-webkit-scrollbar {
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            display: none;
+        }
+
+        .citation-container {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        code.language-latex {
+            color: rgb(180, 200, 240);
+        }
+
+        .bibtex-tag {
+            color: rgb(220, 100, 100);
+        }
+
+        .bibtex-name {
+            color: rgb(160, 130, 230);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            .logo {
+                width: 95%;
+            }
+
+            .logo-container {
+                height: 120px;
+            }
+
+            pre code {
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            p.footnote {
+                font-size: 11px;
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .authors {
+            margin-top: 0;
+        }
+
+        .footnote {
+            width: 100%;
+            color: grey;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        a.link {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="./puget-logo.svg" alt="Puget Logo" class="logo" />
+        </div>
+        <h2 class="title">
+            A Spatiotemporal-Relevance Patch Pruner for High-Throughput Video LLMs
+        </h2>
+        <h6 class="authors" style="text-align: center;">
+            <a href="https://chanwutk.github.io">Chanwut (Mick) Kittivorawong</a>,
+            <a href="https://people.eecs.berkeley.edu/~akcheung">Alvin Cheung</a>
+        </h6>
+        <div class="links">
+            <!-- [<a class="link" href="https://vldb.org/pvldb/volumes/17/paper/Spatialyze%3A%20A%20Geospatial%20Video%20Analytics%20System%20with%20Spatial-Aware%20Optimizations" target="_blank">VLDB</a>]
+            &nbsp;&nbsp;
+            [<a class="link" href="https://doi.org/10.14778/3665844.3665846" target="_blank">DOI</a>]
+            &nbsp;&nbsp; -->
+            [<a class="link" href="https://arxiv.org/abs/2605.25538" target="_blank">arXiv</a>]
+            &nbsp;&nbsp;
+            [<a class="link" href="https://chanwutk.github.io/polytris" target="_blank">Demo</a>]
+            &nbsp;&nbsp;
+            <!-- [<a class="link" href="./pdf" target="_blank">Paper</a>]
+            &nbsp;&nbsp; -->
+            [<a class="link" href="https://github.com/chanwutk/polytris" target="_blank">GitHub</a>]
+            <!-- <a href="https://arxiv.org/abs/2605.25538"><img alt="ArXiv Paper"
+                    src="https://img.shields.io/badge/2605.25538-b31b1b.svg?label=arXiv&style=for-the-badge" target="_blank"></a>
+            <a href="https://github.com/chanwutk/polytris" target="_blank"><img alt="ArXiv Paper"
+                    src="https://img.shields.io/badge/polytris-111111.svg?label=GitHub&style=for-the-badge"></a> -->
+        </div>
+        <p align="justify">
+            Video LLMs answer questions about a video by encoding patches from its frames into visual tokens, but a video produces so many patches that serving these models at high throughput is expensive. Prior pruners reduce the number of patches by removing redundancy without considering the question, or by selecting frames and patches separately. In video question answering, background regions and events unrelated to the question are unnecessary, so their patches can be pruned. A patch is needed only when it shows a relevant region during a relevant event, so its spatial and temporal relevance should be decided together. We present Puget, an efficient patch pruner that considers both the spatial and the temporal relevance of each patch to the question. Spatially, Puget discards patches that are visually irrelevant to the question. Temporally, it discards patches from events unrelated to the question, e.g., the end of the video when the question asks about its beginning. Instead of relying only on heuristics or proxy objectives, Puget learns its pruning preference from the video LLM it prunes for. We train Puget in three steps, with spatial pretraining on image segmentation datasets turned into questions by prompt templates, temporal pretraining on video QA datasets with temporal labels distilled from a large reasoning model, and preference fine-tuning on spatial and temporal labels verified by the target video LLM. On 4 video QA benchmarks with Qwen3.5-9B, Puget matches the accuracy of prior pruners with up to 7.3× lower post-upload time to first token, and it improves accuracy by up to 9.7 points over Vista-LLM at matched time to first token.
+        </p>
+
+        <div class="citation-container">
+            <pre class="citation"><code class="language-latex"><span class="bibtex-tag">@misc</span>{<span class="bibtex-name">kittivorawong2026tetris</span>,
+      title         = {Puget: A Spatiotemporal-Relevance Patch
+                              Pruner for High-Throughput Video LLMs}, 
+      author        = {Chanwut Kittivorawong and
+                       Alvin Cheung},
+      year          = {2026},
+}</code></pre>
+        </div>
+    </div>
+</body>
+</html>
