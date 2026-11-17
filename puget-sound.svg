@@ -4,8 +4,8 @@
   <style>
     <!-- .land { fill: #d0f2e8; } -->
     .land { fill: #ffffff; }
-    .water { fill: #f6fcff; }
-    .shore { stroke: #e0f1ec; }
+    .water { fill: #fbfeff; }
+    .shore { stroke: #e7f3ef; }
   </style>
   <defs>
     <linearGradient id="side-fade">
