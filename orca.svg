@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"
+     role="img" aria-labelledby="title description">
+  <title id="title">Breaching orca</title>
+  <desc id="description">A black and white orca arches into a crescent with its head and tail curling downward.</desc>
+  <defs>
+    <path id="body" d="M214 48
+      C198 28 177 22 153 27 C136 30 120 37 107 45
+      C94 27 74 19 54 23 C63 36 67 54 67 73
+      C44 96 31 125 35 151 C39 178 56 198 83 209
+      C102 217 129 218 151 206 C155 224 171 236 190 235
+      C184 225 178 214 177 207 C194 212 212 199 221 180
+      C209 184 197 179 187 181 C173 182 164 192 152 196
+      C132 204 111 200 97 189 C77 173 73 152 80 130
+      C88 107 107 88 126 79 C141 72 159 70 175 71
+      C190 73 205 71 216 64 C225 59 222 54 214 48Z"/>
+    <clipPath id="body-clip">
+      <use href="#body"/>
+    </clipPath>
+  </defs>
+  <g transform="rotate(90 128 128)">
+    <use href="#body" fill="#101820"/>
+    <path fill="#edf4f6" clip-path="url(#body-clip)" d="M224 59
+      C208 68 192 67 173 64 C145 59 117 69 95 89
+      C74 108 62 134 68 159 C72 177 85 191 103 199
+      C87 182 81 156 91 132 C103 104 132 85 160 79
+      C181 75 211 80 224 65Z"/>
+    <use href="#body" fill="none" stroke="#101820" stroke-width="1.5" stroke-linejoin="round"/>
+    <path fill="#101820" d="M101 76
+      C112 71 126 72 131 80 C140 89 140 106 153 120
+      C134 119 116 111 109 98 C105 91 103 84 101 76Z"/>
+    <path fill="#fff" d="M151 52
+      C160 42 172 39 184 43 C181 49 176 53 170 55
+      C163 57 156 55 151 52Z"/>
+    <circle cx="195" cy="52" r="1.6" fill="#c5d2d7"/>
+  </g>
+</svg>
