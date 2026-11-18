@@ -9,13 +9,13 @@
       }
       .orca-spin {
         transform-origin: 187px 120px;
-        animation: orca-spin 8s cubic-bezier(.65, 0, .35, 1) infinite;
+        animation: orca-spin 18s linear -8s infinite;
       }
     }
 
     @keyframes orca-spin {
       from { transform: rotate(0deg); }
-      50% { transform: rotate(180deg); }
+      44.4444%, 55.5556% { transform: rotate(180deg); }
       to { transform: rotate(360deg); }
     }
 
