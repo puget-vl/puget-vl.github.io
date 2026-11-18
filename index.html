@@ -49,9 +49,26 @@
         }
 
         .logo {
+            position: relative;
             width: 68%;
-            height: auto;
             transform: translateY(-8px);
+        }
+
+        .logo img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .logo-animated {
+            position: absolute;
+            inset: 0;
+            visibility: hidden;
+        }
+
+        @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+            .logo:hover .logo-static { opacity: 0; }
+            .logo:hover .logo-animated { visibility: visible; }
         }
 
         pre.citation {
@@ -151,7 +168,10 @@
 <body>
     <div class="container">
         <div class="logo-container">
-            <img src="./puget-logo.svg" alt="Puget Logo" class="logo" />
+            <div class="logo">
+                <img src="./puget-logo.svg" alt="Puget Logo" class="logo-static" />
+                <img src="./puget-logo-animation.svg" alt="" class="logo-animated" />
+            </div>
         </div>
         <h2 class="title">
             A Spatiotemporal-Relevance Patch Pruner
