@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"
+<svg xmlns="http://www.w3.org/2000/svg" width="271" height="256" viewBox="0 0 271 256"
      role="img" aria-labelledby="title description">
   <title id="title">Breaching orca</title>
   <desc id="description">An orca arches to the right with a swept dorsal fin, lowered head, and spread tail.</desc>
@@ -32,7 +32,7 @@
     </clipPath>
   </defs>
 
-  <g transform="translate(128 128) scale(.158) translate(-744 -602)">
+  <g transform="translate(117 128) scale(.158) translate(-744 -602)">
     <use href="#body" fill="#101820"/>
     <g clip-path="url(#body-clip)">
       <path fill="#edf4f6" d="M20 779
