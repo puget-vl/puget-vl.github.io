@@ -66,9 +66,14 @@
             visibility: hidden;
         }
 
-        @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-            .logo:hover .logo-static { opacity: 0; }
-            .logo:hover .logo-animated { visibility: visible; }
+        @media (prefers-reduced-motion: no-preference) {
+            .logo-static { opacity: 0; }
+            .logo-animated { visibility: visible; }
+        }
+
+        @media (hover: hover) {
+            .logo:hover .logo-static { opacity: 1; }
+            .logo:hover .logo-animated { visibility: hidden; }
         }
 
         pre.citation {
